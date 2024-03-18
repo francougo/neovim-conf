@@ -14,7 +14,6 @@ return {
         -- https://github.com/williamboman/mason-lspconfig.nvim
           "lua_ls",
           "jsonls",
-          "jdtls",
           "quick_lint_js",
           "cssls",
           "bashls",
@@ -34,9 +33,9 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
-      lspconfig.jdtls.setup({
-        capabilities = capabilities
-      })
+      -- lspconfig.jdtls.setup({
+        -- capabilities = capabilities,
+      -- })
       lspconfig.r_language_server.setup({
         capabilities = capabilities
       })
